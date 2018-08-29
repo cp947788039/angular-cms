@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "angular-demo2": {
+        "angular-cms": {
             "root": "",
             "sourceRoot": "src",
             "projectType": "application",
@@ -13,7 +13,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/angular-demo2",
+                        "outputPath": "dist/angular-cms",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "angular-demo2:build"
+                        "browserTarget": "angular-cms:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "angular-demo2:build:production"
+                            "browserTarget": "angular-cms:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "angular-demo2:build"
+                        "browserTarget": "angular-cms:build"
                     }
                 },
                 "test": {
@@ -95,7 +95,7 @@
                 }
             }
         },
-        "angular-demo2-e2e": {
+        "angular-cms-e2e": {
             "root": "e2e/",
             "projectType": "application",
             "architect": {
@@ -103,11 +103,11 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "angular-demo2:serve"
+                        "devServerTarget": "angular-cms:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "angular-demo2:serve:production"
+                            "devServerTarget": "angular-cms:serve:production"
                         }
                     }
                 },
@@ -123,5 +123,5 @@
             }
         }
     },
-    "defaultProject": "angular-demo2"
+    "defaultProject": "angular-cms"
 }
