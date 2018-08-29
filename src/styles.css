@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~element-angular/theme/index.css";
+
+/*element defined reset style*/
+
+.el-menu {
+    background: none!important;
+    border-right: none;
+    border-top: 1px solid #494b50;
+}
+
+.el-menu>.el-menu-item,
+.el-submenu {
+    border-bottom: 1px solid #494b50!important;
+}
+
+.el-menu-item,
+.el-submenu__title {
+    height: 45px;
+    line-height: 45px;
+}
+
+.el-submenu__title:hover,
+.el-menu-item:hover,
+.el-menu-item:hover a {
+    background: none;
+    color: #fff;
+}
+
+.el-menu-item a,
+.el-submenu__title {
+    text-decoration: none;
+    color: #babcc4;
+}
+
+.el-menu-item i,
+.el-submenu__title i {
+    margin-right: 6px;
+    color: #babcc4;
+}
+
+.el-menu-item:hover i,
+.el-submenu__title:hover i {
+    color: #fff;
+}
+
+.el-submenu .el-menu-item {
+    height: 40px;
+    line-height: 40px;
+    background: #1f2d3d;
+}
+
+.el-menu-item-group__title {
+    padding: 0;
+}
+
+.el-menu-item.is-active,
+.el-menu-item.is-active i,
+.el-menu-item a.active {
+    color: #fff!important;
+}
+
+.el-menu-item-group__title {
+    display: none;
+}

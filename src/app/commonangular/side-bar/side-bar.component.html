@@ -1,0 +1,174 @@
+<el-menu class="el-menu-vertical">
+    <el-menu-item index="1">
+        <i class="self-icon icon-gongzuotai"></i><a routerLink="/workspace">工作台</a>
+    </el-menu-item>
+    <el-submenu index="2">
+        <ng-template #title>
+            <i class="self-icon icon-jituanxinxi"></i>集团信息
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="2-1"><a routerLink="/group-account-list">集团账户列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="3">
+        <ng-template #title>
+            <i class="self-icon icon-mendian"></i>门店信息
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="3-1">门店列表</el-menu-item>
+            <el-menu-item index="3-1"><a routerLink="/company-list">门店账户列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="4">
+        <ng-template #title>
+            <i class="self-icon icon-fanganguanli"></i>方案管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="4-1"><a routerLink="/role-list">门店方案列表</a></el-menu-item>
+            <el-menu-item index="4-1"><a routerLink="/authority-list">集团方案列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="5">
+        <ng-template #title>
+            <i class="self-icon icon-jichushuju"></i>基础数据
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="5-1"><a routerLink="/goods-list">货品列表</a></el-menu-item>
+            <el-menu-item index="5-2">货品分类</el-menu-item>
+            <el-menu-item index="5-3">品牌管理</el-menu-item>
+            <el-menu-item index="5-4">品类数据</el-menu-item>
+            <el-menu-item index="5-5">计量单位</el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="6">
+        <ng-template #title>
+            <i class="self-icon icon-miyueguanli"></i>秘钥管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="6-1"><a routerLink="/device-list">秘钥列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="7">
+        <ng-template #title>
+            <i class="self-icon icon-kucunguanli"></i>库存管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="7-1"><a routerLink="/stock-list">库存列表</a></el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="7-2">过期货品列表</el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="7-3">盘点列表</el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="7-4">调拨列表</el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="7-5">出库列表</el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="7-6">入库列表</el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="8">
+        <ng-template #title>
+            <i class="self-icon icon-caigouguanli"></i>采购管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="8-1"><a routerLink="/">门店补货列表</a></el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="8-2">采购列表</el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="8-3"><a routerLink="/supplier-list">供应商列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="9">
+        <ng-template #title>
+            <i class="self-icon icon-dingjiaguanli"></i>定价管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="9-1"><a routerLink="/priceapval-list">定价商品列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="10">
+        <ng-template #title>
+            <i class="self-icon icon-tichengguanli"></i>提成管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="10-1"><a routerLink="/commission-list">提成列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="11">
+        <ng-template #title>
+            <i class="self-icon icon-dingdanguanli"></i>订单管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="11-1"><a routerLink="/order-list">订单列表</a></el-menu-item>
+            <el-menu-item index="11-2">售后订单列表</el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="12">
+        <ng-template #title>
+            <i class="self-icon icon-caiwuguanli"></i>财务管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="12-1"><a routerLink="/finance-list">退款管理</a></el-menu-item>
+            <el-menu-item index="12-2">对账管理</el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="13">
+        <ng-template #title>
+            <i class="self-icon icon-shangchengguanli"></i>商城管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="13-1"><a routerLink="/colum-nmang">栏目管理</a></el-menu-item>
+            <el-menu-item index="13-2">搜索管理</el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="14">
+        <ng-template #title>
+            <i class="self-icon icon-guanggao"></i>公告管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="14-1"><a routerLink="/notice-list">公告列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="15">
+        <ng-template #title>
+            <i class="self-icon icon-youhuicuxiao"></i>优惠促销
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="15-1"><a routerLink="/">优惠券</a></el-menu-item>
+            <el-menu-item index="15-2">限时限量购</el-menu-item>
+            <el-menu-item index="15-3"><a routerLink="/activity-list">促销活动</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="16">
+        <ng-template #title>
+            <i class="self-icon icon-huodongguanli"></i>活动管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="16-1"><a routerLink="/">活动列表</a></el-menu-item>
+            <el-menu-item index="16-2">新建活动列表</el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="17">
+        <ng-template #title>
+            <i class="self-icon icon-huiyuanguanli"></i>会员管理
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="17-1"><a routerLink="/member-list">会员列表</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="18">
+        <ng-template #title>
+            <i class="self-icon icon-shezhi"></i>设置
+        </ng-template>
+        <el-menu-item-group title="&nbsp;">
+            <el-menu-item index="18-1"><a routerLink="/setting-pwd-modify">修改密码</a></el-menu-item>
+        </el-menu-item-group>
+    </el-submenu>
+</el-menu>
