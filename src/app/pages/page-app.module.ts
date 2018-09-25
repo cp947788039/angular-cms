@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ElModule } from 'element-angular';
 // import common component
 import { SideBarComponent } from '../commonangular/side-bar/side-bar.component';
+import { TopComponent } from '../commonangular/top/top.component';
 // import page component
 import { PageAppComponent } from './page-app.component';
 import { AuthorityAddComponent, AuthorityListComponent, AuthorityModifyComponent, RoleAddComponent, RoleListComponent, RoleModifyComponent } from './admin';
@@ -71,6 +72,7 @@ export const ROUTER_CONFIG: Routes = [
   ],
   declarations: [
     SideBarComponent,
+    TopComponent,
     PageAppComponent,
     AuthorityAddComponent, 
     AuthorityListComponent, 

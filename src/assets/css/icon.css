@@ -96,3 +96,56 @@
 
 
 /*自定义样式图标结束*/
+@font-face {
+    font-family: 'iconfont';
+    /* project id 133474 */
+    src: url('//at.alicdn.com/t/font_s6gc3rqawg41v2t9.eot');
+    src: url('//at.alicdn.com/t/font_s6gc3rqawg41v2t9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_s6gc3rqawg41v2t9.woff') format('woff'), url('//at.alicdn.com/t/font_s6gc3rqawg41v2t9.ttf') format('truetype'), url('//at.alicdn.com/t/font_s6gc3rqawg41v2t9.svg#iconfont') format('svg');
+}
+@mixin icon-font ($sizing) {
+    font-family: "iconfont";
+    font-size: $sizing;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.iconfont {
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+    vertical-align: middle;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.smalliconfont {
+    font-family: "iconfont";
+    font-size: 12px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.middleiconfont {
+    font-family: "iconfont";
+    font-size: 15px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.largeiconfont {
+    font-family: "iconfont";
+    font-size: 18px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.bigiconfont {
+    font-family: "iconfont";
+    font-size: 20px;
+    font-style: normal;
+    vertical-align: middle;
+}
